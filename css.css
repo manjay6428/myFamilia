@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+:root{
+    --skin-color:#ec1839;
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 2044px;
+}
+.logo img{
+    height: 40px;
+    width: 40px;
+    margin: 2px 8px;
+    padding: 3px 5px;
+}
+.navbar{
+    position: sticky;
+    top: 0px;
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    width: 100%;
+    height: 96%;
+    z-index: -1;
+    opacity: .8;
+
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 0px 35px;
+    position: relative;
+}
+.navbar ul li {
+    margin: -47px 2px;
+   padding: 12px 24px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    margin: 3px 3px;
+    padding: 5px 5px;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home section css */
+#Home{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    padding: 3px 120px;
+    align-items: center;
+    justify-content:center ;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#Home::before{
+    content: "";
+    background: url('my\ bg.jpg') no-repeat center center/cover;
+    height: 57%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    opacity: .6;
+}
+#Home h1{
+  color: white; 
+}
+.h-primary{
+    font-size: 2.5rem;
+    align-items: center;
+}
+.h-primary span{
+    font-family: 'Clicker Script',cursive;
+    color: var(--skin-color);
+}
+.btn{
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: black;
+}
+/* services section css */
+#services .container{
+    display: flex;
+    padding: 9px 18px;
+    margin: 2px 24px;
+    text-align: center;
+    justify-content: center;
+}
+.servicesheading {
+    
+    display: block;
+    width: 15%;
+    margin: auto;
+}
+
+/* #services{
+    border: 3px solid black;
+} */
+#services .container .box{
+    border: 3px solid red;
+    margin: 3px 20px;
+    border-radius: 25px;
+    background-color:rgb(192, 188, 188);
+}
+.container .box img{
+    height: 100px;
+    width: 100px;
+}
+.box h4{
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+/* clients section css */
+.clientheading {
+    
+    display: block;
+    width: 15%;
+    margin: auto;
+}
+#client::before{
+    content: "";
+    position:absolute;
+    background-image: url('https://media.istockphoto.com/photos/businessman-touching-business-global-network-and-analyzing-sales-data-picture-id1250153349');
+    height: 44%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+#client{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+
+}
+.client-items img{
+    height: 100px;
+    width: 100px;
+    padding: 12px 22px;
+}
+/* contact us section css */
+#contactus::before{
+    content: "";
+    position: absolute;
+    background-image: url('https://cdn.pixabay.com/photo/2019/05/10/13/28/contact-us-4193523_1280.jpg');
+    height: 400px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+#contactus{
+   
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.contactusitems{
+    margin: 3px 12px;
+    padding: 3px 12px;
+}
+.contactusitems label{
+    font-size: 1.1rem;
+}
+.contactusitems input{
+    width: 380px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.contactbtn{
+    width:390px;
+    margin: 3px 22px;
+    cursor: pointer;
+}
+.contactbtn:hover{
+    background-color: black;
+    color: white;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 17px;
+    text-align: center;
+}
